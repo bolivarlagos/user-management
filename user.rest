@@ -6,7 +6,6 @@ GET http://localhost:3000/api/users
 ###
 GET http://localhost:3000/api/users/60c3e7a4cad64e0536d1799d
 
-
 ###
 
 POST http://localhost:3000/api/users/post
@@ -20,15 +19,14 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/users/60c3ef236f877215b16c9528
+DELETE http://localhost:3000/api/users/60c4bc1907b7bd213fd88c57
 
 ###
 
-PATCH  http://localhost:3000/api/users/60c3ef236f877215b16c9528
+PATCH  http://localhost:3000/api/users/60c4c4d357b3ba2b524813cb
 content-type: application/json
 
 {
-    "name": "b",
     "surname": "c",
     "password": "d"
 }

@@ -1,22 +1,17 @@
 const express = require('express')
-const mongoose = require('mongoose')
-const messages = require('./messages')
 const routings = require('./routings/routings')
+const messages = require('./messages')
+
+const { mongoConnection } = require('./controllers/controllers')
 
 const app = express()
 
-mongoose
-    .connect(
-        messages.URI,
-        { 
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        })
-    .then(() => {
+mongoConnection()
+    .then(() => { 
         app.listen(3000)
         console.log(messages.connected)
-        })
-    .catch(error =>  console.log(error))
+    })
+    .catch(error => console.log(error))
 
 app.use(express.json())
 
