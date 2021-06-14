@@ -4,7 +4,7 @@ GET http://localhost:3000/
 GET http://localhost:3000/api/users 
 
 ###
-GET http://localhost:3000/api/users/60c3e7a4cad64e0536d1799d
+GET http://localhost:3000/api/users/60c769fba5f3922a73bd1b44
 
 ###
 
@@ -19,14 +19,14 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/users/60c4bc1907b7bd213fd88c57
+DELETE http://localhost:3000/api/users/60c76d925eb8672c9232953c
 
 ###
 
-PATCH  http://localhost:3000/api/users/60c4c4d357b3ba2b524813cb
+PATCH  http://localhost:3000/api/users/60c769fba5f3922a73bd1b44
 content-type: application/json
 
 {
-    "surname": "c",
-    "password": "d"
+    "name": "jas",
+    "surname": "pion"
 }
